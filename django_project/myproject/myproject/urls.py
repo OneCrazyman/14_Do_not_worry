@@ -23,7 +23,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 router = routers.DefaultRouter()
-router.register('word', views.SwiperContentView)
+router.register('media', views.SwiperContentView)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

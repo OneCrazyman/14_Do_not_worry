@@ -1,5 +1,6 @@
 from django.contrib import admin
 
-from .models import SwiperContent
+from .models import ImageContent,AudioContent
 
-admin.site.register(SwiperContent)
+admin.site.register(ImageContent)
+admin.site.register(AudioContent)

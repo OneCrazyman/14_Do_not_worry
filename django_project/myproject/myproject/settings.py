@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'imageapp',
     'rest_framework',
-]
+    'sslserver',
+    ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

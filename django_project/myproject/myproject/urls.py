@@ -23,10 +23,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 router = routers.DefaultRouter()
-router.register('media', views.SwiperContentView)
+router.register('audio', views.AudioContetnView)
+router.register('image',views.ImageContetnView)
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('test/',views.test),
+    #path('image/',views.SwiperContentView),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
